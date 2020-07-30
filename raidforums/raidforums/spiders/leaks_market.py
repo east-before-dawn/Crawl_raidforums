@@ -12,6 +12,8 @@ class LeaksMarketSpider(CrawlSpider):
     allowed_domains = ['raidforums.com']
     start_urls = ['https://raidforums.com/Forum-Leaks-Market']
 
+
+
     # 定义提取url地址规则 实例化规则
     rules = (
         # LinkExtractor ；链接提取器，提取url地址

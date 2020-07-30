@@ -14,10 +14,13 @@ BOT_NAME = 'raidforums'
 SPIDER_MODULES = ['raidforums.spiders']
 NEWSPIDER_MODULE = 'raidforums.spiders'
 
+COOKIES_DEBUG = True
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'raidforums (+http://www.yourdomain.com)'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36'
+
+COOKIES = "__cfduid=db0c8876438977582caad1b1018347ccc1594819905; cf_clearance=dd6f5f2897c149caa851f369b41ecc72693c25b5-1594820319-0-1zf0bb8afdzf0ab238az9657a90c-250; RFLovesYou_mybb[lastvisit]=1594820320; RFLovesYou_sid=71d4bf3cf61d44607f437530894eb297; RFLovesYou_mybb[announcements]=0; PHPSESSID=jd5gjhrni5jvgctr9vpt872eb8; _ga=GA1.2.788079811.1594820322; _gid=GA1.2.837049681.1594820322; RFLovesYou_mybb[lastactive]=1594820363; RFLovesYou_loginattempts=1; RFLovesYou_mybbuser=121863786_lC7CUhECu4iz80MmVmwTXLaUGg6BGEY2sobtO8jHgwhF01xE4X"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -28,7 +31,7 @@ CONCURRENT_REQUESTS = 32
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
